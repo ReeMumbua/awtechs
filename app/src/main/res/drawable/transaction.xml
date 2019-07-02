@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add"
+        app:showAsAction="always"
+        android:icon="@drawable/add"
+        android:title="Loan" />
+    <item
+        android:id="@+id/sync"
+        app:showAsAction="always"
+        android:icon="@drawable/sync"
+        android:title="Sync" />
+</menu>
+

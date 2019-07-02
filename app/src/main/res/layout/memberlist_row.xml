@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+
+    android:orientation="horizontal"
+    android:padding="5dip">
+    <!--  ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:focusable="false"
+        android:layout_marginBottom="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/list_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:focusable="false"
+            app:civ_border_color="@color/colorGray"
+            app:civ_border_width="1dp" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:focusable="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Anthony Wambua"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <TextView
+        android:id="@+id/amount"
+        android:textColor="@color/colorGray"
+        android:layout_alignBaseline="@id/name"
+        android:layout_width="wrap_content"
+        android:focusable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="1dip"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="2"
+        android:text="Anthony Wambua"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_below="@+id/amount"
+        android:id="@+id/date"
+        android:text="2/3/2018"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/type"
+        />
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/move_num"
+        android:inputType="number"
+        android:layout_below="@+id/date"
+        android:layout_width="100dp"
+        android:layout_height="50dip" />
+<Button
+
+    android:id="@+id/move_town_btn"
+    android:layout_marginTop="30dp"
+    android:layout_toRightOf="@+id/move_num"
+    android:layout_alignBaseline="@id/thumbnail"
+    android:layout_below="@+id/date"
+    android:text="move to town"
+    android:layout_width="match_parent"
+    android:layout_height="50dip" />
+    <EditText
+        android:layout_below="@+id/move_num"
+        android:id="@+id/town_num"
+        android:inputType="number"
+        android:layout_width="100dp"
+        android:layout_height="50dip" />
+    <Button
+        android:layout_toRightOf="@+id/town_num"
+        android:layout_below="@+id/move_num"
+        android:text="set town"
+        android:id="@+id/set_town_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" />
+    <EditText
+        android:layout_below="@+id/town_num"
+        android:id="@+id/store_num"
+        android:inputType="number"
+        android:layout_width="100dp"
+        android:layout_height="50dip" />
+    <Button
+        android:layout_toRightOf="@+id/store_num"
+        android:layout_below="@+id/town_num"
+        android:text="set store"
+        android:id="@+id/set_store_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" />
+</RelativeLayout>

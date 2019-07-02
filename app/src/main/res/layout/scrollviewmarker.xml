@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/line">
+        <shape
+            android:padding="1dp"
+            android:shape="rectangle" >
+            <size
+                android:height="8dp"
+                android:width="3dp" />
+        </shape>
+    </item>
+
+</layer-list>
